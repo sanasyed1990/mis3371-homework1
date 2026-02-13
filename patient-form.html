@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Program name: patient-form.html
+Author: YOUR FULL NAME (UH Roster)
+Date created: 02/13/2026
+Date last edited: 02/13/2026
+Version: 4.0
+Description: Patient Registration Form for We'R'Docs Medical
+-->
+
+<head>
+<meta charset="UTF-8">
+<title>We'R'Docs Medical - Patient Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="header">
+<img src="logo.png" alt="Medical Logo" class="logo">
+<h1>We'R'Docs Medical</h1>
+<p>Today is:
+<script>
+document.write(new Date().toLocaleDateString('en-US',
+{ weekday:'long', year:'numeric', month:'long', day:'numeric'}));
+</script>
+</p>
+</div>
+
+<div id="main">
+<h2>Patient Registration Form</h2>
+
+<form action="thankyou.html">
+
+<table>
+
+<tr>
+<td>First Name:</td>
+<td><input type="text" maxlength="30" required></td>
+<td>Middle Initial:</td>
+<td><input type="text" maxlength="1"></td>
+<td>Last Name:</td>
+<td><input type="text" maxlength="30" required></td>
+</tr>
+
+<tr>
+<td>Email:</td>
+<td><input type="email" required></td>
+</tr>
+
+<tr>
+<td>User ID:</td>
+<td><input type="text" maxlength="20" required></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="password" required></td>
+<td>Re-enter Password:</td>
+<td><input type="password" required></td>
+</tr>
+
+<tr>
+<td><input type="reset" value="CLEAR AND START OVER"></td>
+<td><input type="submit" value="Submit Registration"></td>
+</tr>
+
+</table>
+
+</form>
+</div>
+
+<div id="footer">
+<p>We'R'Docs Medical | Sugar Land, TX</p>
+<button onclick="alert('Contact us at support@werdocs.com')">Contact Us</button>
+</div>
+
+</body>
+</html>
