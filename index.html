@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FirstLine Health - Patient Registration</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+window.onload = function() {
+    const dateElement = document.getElementById("currentDate");
+    const today = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.innerHTML = today.toLocaleDateString(undefined, options);
+};
+</script>
+</head>
+
+<body>
+
+<div id="header">
+    <div class="header-left">
+        <img src="logo.png" alt="FLH Logo" class="logo">
+    </div>
+
+    <div class="header-center">
+        <h1>FirstLine Health</h1>
+    </div>
+
+    <div class="header-right" id="currentDate"></div>
+</div>
+
+<div id="main">
+    <h2>Patient Registration Form</h2>
+    <!-- Your form remains unchanged below -->
+</div>
+
+<div id="footer">
+    FirstLine Health | Sugar Land, TX
+</div>
+
+</body>
+</html>
